@@ -1,13 +1,14 @@
 Script started on 2019-11-14 02:23:50-0500
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ exitcat main.cpp contactfactory.h conntactfactory.cpp contact.h contact.cpp contactlist.h contactlist..cpp[1Pcpp[C[C[C[C
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ exitcat main.cpp contactfactory.h con
+ntactfactory.cpp contact.h contact.cpp contactlist.h contactlist..cpp[1Pcpp[C[C[C[C
 //
-//Programer:Chenyu Wang 
+//Programer:Yongqiang Chen 
 //
 //  main.cpp
 //  CS331_HW03
 //  Brief Description: Random cantact information in contactfactory class can be add and remove to contactlist class. User can get the origial contact information and one category mailaddress information and one category phone number
 //
-//  Created by Chenyu Wang on 10/29/19.
+//  Created by Yongqiang Chen on 10/29/19.
 //  Last modifiction date on 11/14/19.
 //  Copyright © 2019 chenyu wang. All rights reserved.
 //
@@ -57,8 +58,8 @@ int main(int argc, char *argv[]) {
 //  contactfactory.hpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/29/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by Yongqiang Chen on 10/29/19.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #ifndef contactfactory_h_
@@ -87,8 +88,8 @@ public:
 //  contactfactory.cpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/29/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by yongqiang chen on 10/29/19.
+//  Copyright © 2019 yongqiang chen. All rights reserved.
 //
 
 #include "contactfactory.h"
@@ -96,13 +97,13 @@ public:
 ContactFactory::ContactFactory()
 {
     QString s;
-    QString firstname[10]={"Chenyu","Jason","Jack","Arraon","Xiao","Ben","Lucy","Mark","Viv","Jhon"};
+    QString firstname[10]={"yongqiang","Jason","Jack","Arraon","Xiao","Ben","Lucy","Mark","Viv","Jhon"};
     for(int i=0;i<10;i++){
         s="firstName: "+firstname[i];
         firstNameL.append(s);
     }
    
-    QString lastname[10]={"Wang","Song","Qian","Sun","Li","Zhou","Wu","Xu","Xi","Jia"};
+    QString lastname[10]={"chen","Song","Qian","Sun","Li","Zhou","Wu","Xu","Xi","Jia"};
     for(int i=0;i<10;i++){
         s="LastName: "+lastname[i];
         lastNameL.append(s);
@@ -149,8 +150,8 @@ void ContactFactory::operator>>(ContactList& cl){
 //  contact.hpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/30/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by Yongqiang Chen on 10/30/19.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #ifndef contact_h_
@@ -179,8 +180,8 @@ public:
 //  contact.cpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/30/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by Yongqiang Chen on 10/30/19.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #include "contact.h"
@@ -199,8 +200,8 @@ QString Contact::toString(){
 //  contactlist.hpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/30/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by Yongqiang Chen on 10/30/19.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #ifndef contactlist_h_
@@ -223,8 +224,8 @@ public:
 //  contactlist.cpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/30/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by Yongqiang Chen on 10/30/19.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #include "contactlist.h"
@@ -272,13 +273,13 @@ QStringList ContactList::getMailingList(int category){
     }
     return l;
 }
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ qmake -project
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ qmake 
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ cat [K[K[K[Kls
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ qmake -project
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ qmake 
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ cat [K[K[K[Kls
 contact.cpp         contact.h        CS331_HW03.pro  Makefile
 contactfactory.cpp  contactlist.cpp  hw03script
 contactfactory.h    contactlist.h    main.cpp
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ cat CS331_HW03.pro Makefile 
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ cat CS331_HW03.pro Makefile 
 ######################################################################
 # Automatically generated by qmake (2.01a) Thu Nov 14 02:24:11 2019
 ######################################################################
@@ -525,17 +526,17 @@ uninstall:   FORCE
 
 FORCE:
 
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ MAKE[K[K[K[Kmake 
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ MAKE[K[K[K[Kmake 
 g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++-64 -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I. -I. -o contact.o contact.cpp
 g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++-64 -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I. -I. -o contactfactory.o contactfactory.cpp
 g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++-64 -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I. -I. -o contactlist.o contactlist.cpp
 g++ -c -m64 -pipe -O2 -Wall -W -D_REENTRANT -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++-64 -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I. -I. -o main.o main.cpp
 g++ -m64 -Wl,-O1 -o CS331_HW03 contact.o contactfactory.o contactlist.o main.o    -L/usr/lib/x86_64-linux-gnu -lQtGui -lQtCore -lpthread 
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ ./S[KCS331_HW03 
-Category:1	firstName: Jhon	LastName: Wang	24street	city: DC	00164	1553889073
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ ./S[KCS331_HW03 
+Category:1	firstName: Jhon	LastName: Chen	24street	city: DC	00164	1553889073
 Category:1	firstName: Lucy	LastName: Xu	49street	city: Qunicy	65055	4145505533
 Category:1	firstName: Ben	LastName: Xi	28street	city: Malden	85115	4914832557
-Category:2	firstName: Chenyu	LastName: Jia	39street	city: Allston	49214	5395015526
+Category:2	firstName: Yongqiang	LastName: Jia	39street	city: Allston	49214	5395015526
 Category:1	firstName: Mark	LastName: Wu	2street	city: Revere	66532	4623499511
 Category:2	firstName: Lucy	LastName: Li	32street	city: Revere	43815	5243599262
 Category:1	firstName: Jason	LastName: Wang	49street	city: DC	59620	7483817198
@@ -543,7 +544,7 @@ Category:1	firstName: Lucy	LastName: Qian	6street	city: Austin	06043	3043000965
 Category:1	firstName: Arraon	LastName: Jia	20street	city: Shanghai	72501	6100810426
 Category:2	firstName: Ben	LastName: Wu	44street	city: Malden	84370	8069949121
 category 1
-firstName: Jhon LastName: Wang   1553889073
+firstName: Yongqiang LastName: Chen   1553889073
 firstName: Lucy LastName: Xu   4145505533
 firstName: Ben LastName: Xi   4914832557
 firstName: Mark LastName: Wu   4623499511
@@ -554,7 +555,7 @@ category 2
 39street  city: Allston  49214
 32street  city: Revere  43815
 44street  city: Malden  84370
-]0;chenyu@chenyu-VirtualBox: ~/Desktop/CS331_HW03[01;32mchenyu@chenyu-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ EX[K[KEX[K[Kexit
+]0;yongqiang@yongqiang-VirtualBox: ~/Desktop/CS331_HW03[01;32myongqiang@yongqiang-VirtualBox[00m:[01;34m~/Desktop/CS331_HW03[00m$ EX[K[KEX[K[Kexit
 exit
 
 Script done on 2019-11-14 02:25:52-0500
