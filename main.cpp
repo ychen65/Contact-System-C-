@@ -1,13 +1,13 @@
 //
-//Programer:Chenyu Wang 
+//Programer:Yongqiang Chen 
 //
 //  main.cpp
 //  CS331_HW03
 //  Brief Description: Random cantact information in contactfactory class can be add and remove to contactlist class. User can get the origial contact information and one category mailaddress information and one category phone number
 //
-//  Created by Chenyu Wang on 10/29/19.
+//  Created by Yongqiang Chen on 10/29/19.
 //  Last modifiction date on 11/14/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #include <QStringList>
