@@ -2,8 +2,8 @@
 //  contactfactory.cpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/29/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by Yongqiang Chen on 10/29/19.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #include "contactfactory.h"
@@ -11,13 +11,13 @@
 ContactFactory::ContactFactory()
 {
     QString s;
-    QString firstname[10]={"Chenyu","Jason","Jack","Arraon","Xiao","Ben","Lucy","Mark","Viv","Jhon"};
+    QString firstname[10]={"yongqiang","Jason","Jack","Arraon","Xiao","Ben","Lucy","Mark","Viv","Jhon"};
     for(int i=0;i<10;i++){
         s="firstName: "+firstname[i];
         firstNameL.append(s);
     }
    
-    QString lastname[10]={"Wang","Song","Qian","Sun","Li","Zhou","Wu","Xu","Xi","Jia"};
+    QString lastname[10]={"Chen","Song","Qian","Sun","Li","Zhou","Wu","Xu","Xi","Jia"};
     for(int i=0;i<10;i++){
         s="LastName: "+lastname[i];
         lastNameL.append(s);
