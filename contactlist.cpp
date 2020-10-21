@@ -2,8 +2,8 @@
 //  contactlist.cpp
 //  CS331_HW03
 //
-//  Created by Chenyu Wang on 10/30/19.
-//  Copyright © 2019 chenyu wang. All rights reserved.
+//  Created by Yongqiang Chen on 10/30/19.
+//  Copyright © 2019 Yongqiang Chen. All rights reserved.
 //
 
 #include "contactlist.h"
